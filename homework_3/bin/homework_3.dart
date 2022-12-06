@@ -30,5 +30,29 @@ void main(List<String> arguments) {
 
   print(booktwo.getRange(2, 9));
 
-  List flutter = [1, 2, 3, 4, 5, 6, 7];
+  List fly = [1, 2, 3, 4, 5, 6, 7];
+  print(fly.contains(3));
+
+  print(fly.first);
+  print(fly.last);
+
+  print(fly.length);
+
+  List source = [601, 123, 2, "dart", 45, 95, "dart24", 1];
+
+  print(source.contains('dart'));
+  print(source.contains(951));
+
+  List note = ['post', 1, 0, 'flutter'];
+  String myDart = 'Flutter';
+  print(note.contains(myDart));
+
+  List one = ['I', 'Started', 'Learn', 'Flutter', 'Since', 'April'];
+  String myFlutter = '';
+  myFlutter = one.join('*');
+  print(myFlutter);
+
+  List two = [1, 9, 3, 195, 202, 2, 5, 7, 9, 10, 3, 15, 0, 11];
+
+  print(two..sort());
 }
