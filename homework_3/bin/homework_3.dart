@@ -1,10 +1,16 @@
+import 'dart:math';
+
 import 'package:homework_3/homework_3.dart' as homework_3;
 
 void main(List<String> arguments) {
-  List book = [1, 7, 12, 3, 56, 2, 87, 34, 54];
-  print(book[0]);
-  print(book[4]);
-  print(book[8]);
+  List listone = [1, 7, 12, 3, 56, 2, 87, 34, 54];
+  print('''Первый элемент- ${listone.first}
+  Пятый элемент-${listone[4]},
+  Последний элемент-${listone.last}''');
+
+  print(
+    listone[Random().nextInt(listone.length)],
+  );
 
   List paper = [3, 12, 43, 1, 25, 6, 5, 7];
   List pencil = [55, 11, 23, 56, 78, 1, 9];
