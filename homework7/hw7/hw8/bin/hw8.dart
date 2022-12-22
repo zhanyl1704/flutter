@@ -25,3 +25,52 @@ void main() {
 
   taskOne();
 }
+
+// //   String a = '123';
+
+// //   print(a.toInt().runtimeType);
+
+// //   List<int> b = [1, 2, 3, 4, 5, 6];
+// //   print(b.avarage());
+// // }
+
+// // extension MyInt on String {
+// //   int toInt() {
+// //     return int.parse(this);
+// //   }
+// // }
+
+// // extension MyList on List<int> {
+// //   double avarage() {
+// //     int summ = 0;
+// //     for (int i = 0; i < length; i++) {
+// //       summ += this[i];
+// //     }
+// //     return summ / length;
+// //   }
+
+class Animals {
+  String name;
+
+  Animals({required this.name});
+
+  void voice() {
+    print('rrrr');
+  }
+}
+
+class Cats {
+  void voice1() {
+    print('mayu');
+  }
+}
+
+class CatsFamily {
+  void color() {
+    print('color');
+  }
+}
+
+class Tiger extends Animals with Cats, CatsFamily {
+  Tiger({required String name}) : super(name: name);
+}

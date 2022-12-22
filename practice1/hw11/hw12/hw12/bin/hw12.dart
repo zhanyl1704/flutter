@@ -1,13 +1,6 @@
 import 'dart:io';
 
 void main() {
-  Tiger vasya = Tiger(
-    name: '12',
-  );
-  vasya.voice();
-  vasya.voice1();
-  vasya.color();
-
   Vehicle(maxSpeed: '500', mileAge: 1000, seatingCapacity: 100, color: 'red');
   Scooter sc =
       Scooter(maxSpeed: '500', mileAge: 50, seatingCapacity: 4, color: 'black');
@@ -28,55 +21,6 @@ void main() {
   print(list);
   first.getStudy();
   second.getExplain();
-
-// //   String a = '123';
-
-// //   print(a.toInt().runtimeType);
-
-// //   List<int> b = [1, 2, 3, 4, 5, 6];
-// //   print(b.avarage());
-// // }
-
-// // extension MyInt on String {
-// //   int toInt() {
-// //     return int.parse(this);
-// //   }
-// // }
-
-// // extension MyList on List<int> {
-// //   double avarage() {
-// //     int summ = 0;
-// //     for (int i = 0; i < length; i++) {
-// //       summ += this[i];
-// //     }
-// //     return summ / length;
-// //   }
-}
-
-class Animals {
-  String name;
-
-  Animals({required this.name});
-
-  void voice() {
-    print('rrrr');
-  }
-}
-
-class Cats {
-  void voice1() {
-    print('mayu');
-  }
-}
-
-class CatsFamily {
-  void color() {
-    print('color');
-  }
-}
-
-class Tiger extends Animals with Cats, CatsFamily {
-  Tiger({required String name}) : super(name: name);
 }
 
 //  практика с классами №1
