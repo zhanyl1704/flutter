@@ -3,6 +3,7 @@ import 'dart:io';
 import 'package:practice1/practice1.dart' as practice1;
 
 void main() {
+  // задача №1
   int answer = 0;
   int number = 50;
   int half = 25;

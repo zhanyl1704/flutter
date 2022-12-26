@@ -18,19 +18,19 @@ void main() {
 //     ;
 //     return summ / salary.length;
 
-//   Country Kyrgyzstan = Country(name: 'Kyrgyzstan', climate: 'umerennyi');
-//   Kyrgyzstan.printName();
-// }
+  Country Kyrgyzstan = Country(name: 'Kyrgyzstan', climate: 'umerennyi');
+  Kyrgyzstan.printName();
+}
 
-// class Country {
-//   String name;
-//   String climate;
+class Country {
+  String name;
+  String climate;
 
-//   void printName() {
-//     print('$name $climate');
-//   }
+  void printName() {
+    print('$name $climate');
+  }
 
-//   Country({required this.name, required this.climate});
+  Country({required this.name, required this.climate});
 
   Car Toyota = Car(power: '456', color: 'grey', name: 'Toyota', price: '13000');
 

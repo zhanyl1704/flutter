@@ -2,7 +2,7 @@ import 'dart:io';
 
 void main() {
   Vehicle(maxSpeed: '500', mileAge: 1000, seatingCapacity: 100, color: 'red');
-  Scooter sc =
+  Scooter s9 =
       Scooter(maxSpeed: '500', mileAge: 50, seatingCapacity: 4, color: 'black');
   Bus n10 = Bus(maxSpeed: '40', mileAge: 30, color: 'green');
   MiniBus n20 = MiniBus(maxSpeed: '50', mileAge: 50, color: 'pink');
