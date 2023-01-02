@@ -1,22 +1,7 @@
 import 'package:hw11/hw11.dart' as hw11;
 
 void main() {
-//   Developer abai = Developer(name: 'abai', salary: [234, 4556, 654, 7654]);
-//   print(abai.getAvarage());
-// }
-
-// class Developer {
-//   String name;
-//   List<int> salary;
-
-//   Developer({required this.name, required this.salary});
-//   double getAvarage() {
-//     int summ = 0;
-//     for (int i in salary) {
-//       summ += i;
-//     }
-//     ;
-//     return summ / salary.length;
+  // задание№1
 
   Country Kyrgyzstan = Country(name: 'Kyrgyzstan', climate: 'umerennyi');
   Kyrgyzstan.printName();
@@ -32,6 +17,7 @@ class Country {
 
   Country({required this.name, required this.climate});
 
+  // задание №2
   Car Toyota = Car(power: '456', color: 'grey', name: 'Toyota', price: '13000');
 
   Toyota.printCar();
@@ -59,16 +45,25 @@ Phone iPhone = Phone(number: '0500343434', model: '14pro', weight: '300');
 Phone redMi =Phone(number:'0700343567,'model: '13', weight:'350');
 
 
+// задание №3
 
 
 class Phone {
-  String number;
+  int number;
   String model;
-  String weight;
+  int weight;
 
   void printPhone(){
     print('$number,$model,$weight');
   }
 
   Phone({required this.number, required this.model, required this.weight});
+
+  receiveCall(String name){
+    print('Вам звонит $name');
+  }
+   void sendMessage(String message,int sentNumber){
+    print('from $number to $sentNumber message $message');
+   }
+
 }
