@@ -3,46 +3,54 @@ import 'dart:math';
 
 void main() {
   // задание№1
-  // List numbers = [-10, 54, 21, 98, -2, 15, -23, 100, -91, 5];
-  // print(numbers);
-  // int saver = 0;
-  // for (int j = 0; j < numbers.length - 1; j++) {
-  //   for (int i = 0; i < numbers.length - 1; i++) {
-  //     if (numbers[i] > numbers[i + 1]) {
-  //       saver = numbers[i + 1];
-  //       numbers[i + 1] = numbers[i];
-  //       numbers[i] = saver;
+  List numbers = [-10, 54, 21, 98, -2, 15, -23, 100, -91, 5];
+  print(numbers);
+  int saver = 0;
+  for (int j = 0; j < numbers.length - 1; j++) {
+    for (int i = 0; i < numbers.length - 1; i++) {
+      if (numbers[i] > numbers[i + 1]) {
+        saver = numbers[i + 1];
+        numbers[i + 1] = numbers[i];
+        numbers[i] = saver;
+      }
+    }
+  }
 
   // задание№2
 
-  // String a = 'data 48 call 9231dadsad read13 blank0a';
-  // List b = a.split(' ');
-  // String save = '';
+  String a = 'data 48 call 9231dadsad read13 blank0a';
+  List b = a.split(' ');
+  String save = '';
 
-  // for (int i = 0; i < b.length - 1; i++) {
-  //   if (b[i].length > b[i + 1].length) {
-  //     save = b[i + 1];
-  //     b[i + 1] = b[i];
-  //     b[i] = save;
-  //   }
-  // }
-  // print(b.last);
+  for (int i = 0; i < b.length - 1; i++) {
+    if (b[i].length > b[i + 1].length) {
+      save = b[i + 1];
+      b[i + 1] = b[i];
+      b[i] = save;
 
-  // Задание №3
-  print('Задай мне вопрос!');
-  String question = stdin.readLineSync()!;
-  List<String> answer = [
-    'Да',
-    'Нет',
-    'Скорее всего да',
-    'Скорее всего нет',
-    'Имеются перспективы',
-    'Вопрос задан неверно'
-  ];
-  int index = Random().nextInt(answer.length);
-  print(answer[index]);
+      print(b.last);
 
-  // задание №4
+      // Задание №3
+      print('Задай мне вопрос!');
+      String question = stdin.readLineSync()!;
+      List<String> answer = [
+        'Да',
+        'Нет',
+        'Скорее всего да',
+        'Скорее всего нет',
+        'Имеются перспективы',
+        'Вопрос задан неверно'
+      ];
+      int index = Random().nextInt(answer.length);
+      print(answer[index]);
+    }
+  }
+}
+
+      
+
+      // задание №4
+      
 
 //   List<Soldat> army = [];
 //   List<Soldat> zvaniya = [
@@ -72,7 +80,9 @@ void main() {
 //   print('Soldaty ${soldaty.length}');
 //   print('Praporshiki ${praporshiki.length}');
 //   print('Oficery &{oficery.length}');
-// }
+//         }}
+        
+
 
 // class Soldat {
 //   int value;
@@ -101,9 +111,8 @@ void main() {
 
 // class General extends Soldat {
 //   General() : super(value: 13);
-// }
-
-  // задание №5
+// }}
+// //   // задание №5
 
 //   int random = Random().nextInt(100 - 0);
 //   List<Animal> skot = [];
@@ -115,8 +124,8 @@ void main() {
 //       skot.add(Horse());
 //     } else {
 //       skot.add(Cow());
-//     }
-//   }
+//     }}
+  
 //   print(skot.length);
 //   for (int i = 0; i < skot.length; i++) {
 //     print(skot[i].runtimeType);
@@ -129,7 +138,8 @@ void main() {
 //   });
 //   print('Total price is $totalPrice som');
 //   print('Total meat is $totalMeat kg');
-// }
+  
+  
 
 // class Animal {
 //   int weight;
@@ -147,5 +157,4 @@ void main() {
 
 // class Cow extends Animal {
 //   Cow() : super(weight: 150, price: 15000);
-// }
-}
+// 
